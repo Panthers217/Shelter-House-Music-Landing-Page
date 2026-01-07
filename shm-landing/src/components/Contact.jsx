@@ -72,7 +72,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-container bg-gradient-to-b from-gray-50 to-white">
+    <section id="contact" className="section-container bg-gradient-to-b from-primary-50 to-primary-100">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
@@ -83,10 +83,10 @@ const Contact = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Get In Touch
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           Let's Start Your Project
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto\">
           Have a question or ready to book a session? We'd love to hear from you. Reach out and let's create something amazing together.
         </p>
       </motion.div>
@@ -101,7 +101,7 @@ const Contact = () => {
           {/* <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-accent-700 mb-2">
                   Full Name *
                 </label>
                 <input
@@ -111,13 +111,13 @@ const Contact = () => {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                   placeholder="John Doe"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-accent-700 mb-2">
                   Email Address *
                 </label>
                 <input
@@ -127,13 +127,13 @@ const Contact = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                   placeholder="john@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="phone" className="block text-sm font-semibold text-accent-700 mb-2">
                   Phone Number
                 </label>
                 <input
@@ -142,13 +142,13 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                   placeholder="(252) 555-0123"
                 />
               </div>
 
               <div>
-                <label htmlFor="service" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="service" className="block text-sm font-semibold text-accent-700 mb-2">
                   Service Interested In *
                 </label>
                 <select
@@ -157,7 +157,7 @@ const Contact = () => {
                   required
                   value={formData.service}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
+                  className="w-full px-4 py-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                 >
                   <option value="">Select a service</option>
                   <option value="recording">Music Recording</option>
@@ -170,7 +170,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-accent-700 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -180,7 +180,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all resize-none"
+                  className="w-full px-4 py-3 border border-primary-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
@@ -215,8 +215,8 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">{info.title}</h3>
-                      <p className="text-gray-600 group-hover:text-primary-600 transition-colors">
+                      <h3 className="font-semibold text-accent-700 mb-1">{info.title}</h3>
+                      <p className="text-accent-600 group-hover:text-primary-600 transition-colors">
                         {info.content}
                       </p>
                     </div>
@@ -227,8 +227,8 @@ const Contact = () => {
                       {info.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">{info.title}</h3>
-                      <p className="text-gray-600">{info.content}</p>
+                      <h3 className="font-semibold text-accent-700 mb-1">{info.title}</h3>
+                      <p className="text-accent-600">{info.content}</p>
                     </div>
                   </div>
                 )}
@@ -244,7 +244,7 @@ const Contact = () => {
             className="bg-gradient-to-br from-primary-600 to-accent-600 p-8 rounded-2xl text-white"
           >
             <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
-            <p className="mb-6 text-gray-100">
+            <p className="mb-6 text-primary-100">
               Stay connected with us on social media for updates, behind-the-scenes content, and more.
             </p>
             <div className="flex gap-4">

@@ -71,10 +71,10 @@ const Services = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Our Services
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           Professional Music Production Services
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto">
           We create inspirational gospel and Christian music that promotes healing, peace, righteousness, joy, and spiritual renewal—uplifting congregations and artists through collaborative worship-centered recordings.
 
         </p>
@@ -87,16 +87,16 @@ const Services = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 group hover:-translate-y-2"
+            className="bg-gradient-to-br from-primary-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-primary-200 group hover:-translate-y-2"
           >
             <div className="text-primary-600 mb-6 group-hover:scale-110 transition-transform duration-300">
               {service.icon}
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-            <p className="text-gray-600 mb-6">{service.description}</p>
+            <h3 className="text-2xl font-bold text-accent-700 mb-4">{service.title}</h3>
+            <p className="text-accent-600 mb-6">{service.description}</p>
             <ul className="space-y-2">
               {service.features.map((feature, idx) => (
-                <li key={idx} className="flex items-center text-gray-700">
+                <li key={idx} className="flex items-center text-accent-700">
                   <svg className="w-5 h-5 text-primary-600 mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>

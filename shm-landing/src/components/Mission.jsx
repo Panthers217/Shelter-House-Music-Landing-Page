@@ -26,7 +26,7 @@ const Mission = () => {
   };
 
   return (
-    <section id="mission" className="section-container bg-gradient-to-b from-white to-gray-50">
+    <section id="mission" className="section-container bg-gradient-to-b from-primary-50 to-primary-100">
       <motion.div
         ref={ref}
         variants={containerVariants}
@@ -40,11 +40,11 @@ const Mission = () => {
           </span>
         </motion.div>
         
-        <motion.h2 variants={itemVariants} className="heading-2 mb-6 text-gray-900">
+        <motion.h2 variants={itemVariants} className="heading-2 mb-6 text-accent-700">
           Glorifying God Through Excellence in Music
         </motion.h2>
         
-        <motion.p variants={itemVariants} className="text-xl text-gray-600 mb-8 leading-relaxed">
+        <motion.p variants={itemVariants} className="text-xl text-accent-600 mb-8 leading-relaxed">
           At Shelter House Music, we believe that worship deserves the highest quality production. 
           Our mission is to serve the body of Christ by providing professional recording, mixing, 
           and production services that honor God and uplift His people.
@@ -88,8 +88,8 @@ const Mission = () => {
               <div className="text-primary-600 mb-4 flex justify-center">
                 {value.icon}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
+              <h3 className="text-xl font-bold text-accent-700 mb-3">{value.title}</h3>
+              <p className="text-accent-600">{value.description}</p>
             </motion.div>
           ))}
         </motion.div>

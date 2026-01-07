@@ -76,10 +76,10 @@ const FeaturedWork = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Featured Work
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           Projects We're Proud Of
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto">
           Explore some of the amazing projects we've had the privilege to work on with talented artists and ministries.
         </p>
       </motion.div>
@@ -97,8 +97,8 @@ const FeaturedWork = () => {
             onClick={() => setActiveCategory(category)}
             className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
               activeCategory === category
-                ? 'bg-primary-600 text-white shadow-lg'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-primary-500 text-white shadow-lg'
+                : 'bg-primary-100 text-accent-700 hover:bg-primary-200'
             }`}
           >
             {category}
@@ -116,7 +116,7 @@ const FeaturedWork = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
           >
-            <div className="aspect-square overflow-hidden bg-gray-200">
+              <div className="aspect-square overflow-hidden bg-primary-100">
               <img
                 src={project.image}
                 alt={project.title}
@@ -126,13 +126,13 @@ const FeaturedWork = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
               <span className="text-primary-300 text-sm font-semibold mb-2">{project.category}</span>
               <h3 className="text-2xl font-bold text-white mb-1">{project.title}</h3>
-              <p className="text-gray-300 text-sm mb-3">{project.artist}</p>
-              <p className="text-gray-200 text-sm">{project.description}</p>
+              <p className="text-primary-200 text-sm mb-3">{project.artist}</p>
+              <p className="text-primary-100 text-sm">{project.description}</p>
             </div>
             <div className="p-6 bg-white">
               <span className="text-primary-600 text-sm font-semibold">{project.category}</span>
-              <h3 className="text-xl font-bold text-gray-900 mt-2 mb-1">{project.title}</h3>
-              <p className="text-gray-600 text-sm">{project.artist}</p>
+              <h3 className="text-xl font-bold text-accent-700 mt-2 mb-1">{project.title}</h3>
+              <p className="text-accent-600 text-sm">{project.artist}</p>
             </div>
           </motion.div>
         ))}
@@ -144,7 +144,7 @@ const FeaturedWork = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
         className="text-center mt-16"
       >
-        <p className="text-gray-600 mb-6">Want to see your project featured here?</p>
+        <p className="text-accent-600 mb-6">Want to see your project featured here?</p>
         <a href="#contact" className="btn-primary text-lg">
           Start Your Project
         </a>

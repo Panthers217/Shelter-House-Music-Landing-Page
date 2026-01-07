@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <footer className="bg-gradient-to-br from-accent-900 via-accent-800 to-accent-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
@@ -38,7 +38,7 @@ const Footer = () => {
                 Shelter House<br />Music
               </span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-primary-200 mb-6 leading-relaxed">
               Serving the body of Christ through professional music production in Eastern North Carolina.
             </p>
             {/* <div className="flex gap-4">
@@ -67,7 +67,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-primary-200 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-primary-200 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-primary-200 hover:text-white transition-colors"
                   >
                     {link.label}
                   </a>
@@ -110,17 +110,17 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Section */}
-        {/* <div className="border-t border-gray-700 pt-12 mb-12">
+        {/* <div className="border-t border-accent-700 pt-12 mb-12">
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-primary-200 mb-6">
               Subscribe to our newsletter for updates, tips, and exclusive content.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-600 focus:border-transparent transition-all"
+                className="flex-1 px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-primary-300 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
               />
               <button
                 type="submit"
@@ -133,18 +133,18 @@ const Footer = () => {
         </div> */}
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm">
+        <div className="border-t border-accent-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-primary-200 text-sm">
             © {currentYear} Shelter House Music. All rights reserved.
           </p>
           {/* <div className="flex gap-6 text-sm">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="#" className="text-primary-200 hover:text-white transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="#" className="text-primary-200 hover:text-white transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+            <a href="#" className="text-primary-200 hover:text-white transition-colors">
               Cookie Policy
             </a>
           </div> */}
@@ -152,7 +152,7 @@ const Footer = () => {
 
         {/* Tax Notice */}
         {/* <div className="mt-8 text-center">
-          <p className="text-gray-500 text-xs">
+          <p className="text-primary-300 text-xs">
             Shelter House Music is a 501(c)(3) nonprofit organization. Tax ID: XX-XXXXXXX
           </p>
         </div> */}
