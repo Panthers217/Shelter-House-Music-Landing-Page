@@ -20,9 +20,9 @@ function App() {
         <Services />
         <Process />
         <FeaturedWork />
-        <DonationModel />
-        <Testimonials />
-        <Resources />
+        {/* <DonationModel /> */}
+        {/* <Testimonials />
+        <Resources /> */}
         <Contact />
       </main>
       <Footer />

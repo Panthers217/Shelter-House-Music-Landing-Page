@@ -9,28 +9,29 @@ const Process = () => {
   const steps = [
     {
       number: "01",
-      title: "Initial Consultation",
-      description: "We start with a conversation to understand your vision, goals, and specific needs for your project.",
+      title: "Vision Alignment",
+      description: "We introduce the Shelter House Music sound and creative vision, then align it with your message, purpose, and musical direction—whether you're an artist or a church.",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
         </svg>
       )
     },
     {
       number: "02",
-      title: "Planning & Preparation",
-      description: "Together we create a detailed plan, timeline, and prepare all necessary materials and arrangements.",
+      title: "Arrangement & Musical Direction",
+      description: "Shelter House shapes the music, arrangements, and vocal flow using our established style, crafted to support expressive vocals, choirs, and worship-driven performances.",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
         </svg>
       )
     },
     {
       number: "03",
-      title: "Recording Session",
-      description: "Professional recording in our studio with experienced engineers capturing the best possible sound.",
+      title: "Guided Recording Sessions",
+      description: "We lead calm, focused recording sessions with clear direction and structure, creating an environment that captures authentic performances with confidence and clarity.",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -39,8 +40,8 @@ const Process = () => {
     },
     {
       number: "04",
-      title: "Mixing & Production",
-      description: "Our team expertly mixes your tracks, balancing levels, applying effects, and creating the perfect sound.",
+      title: "Professional Production",
+      description: "All editing, mixing, and mastering are completed to a consistent Shelter House standard, delivering warmth, balance, and professional polish across every project.",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
@@ -49,21 +50,11 @@ const Process = () => {
     },
     {
       number: "05",
-      title: "Review & Revisions",
-      description: "You review the mix and we make any necessary adjustments to ensure it meets your expectations.",
+      title: "Release & Impact",
+      description: "Final recordings are prepared for release, with donation-based distribution to help extend reach, support ministry goals, or grow an artist's audience.",
       icon: (
         <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
-    },
-    {
-      number: "06",
-      title: "Final Mastering & Delivery",
-      description: "Professional mastering followed by delivery of your final tracks in your preferred format.",
-      icon: (
-        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
         </svg>
       )
     }
@@ -79,13 +70,13 @@ const Process = () => {
         className="text-center mb-16"
       >
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
-          Our Process
+          Process Timeline
         </span>
         <h2 className="heading-2 mt-4 mb-6 text-gray-900">
-          From Vision to Reality
+          Guided Recording Model
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Our streamlined process ensures that your project is handled with care and professionalism at every step.
+          Shelter House sets the musical direction while honoring the message your ministry wants to communicate.
         </p>
       </motion.div>
 
@@ -134,20 +125,7 @@ const Process = () => {
         </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 1 }}
-        className="text-center mt-16 bg-primary-50 p-8 rounded-2xl"
-      >
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started?</h3>
-        <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-          Let's discuss your project and create something amazing together. Reach out for a free consultation.
-        </p>
-        <a href="#contact" className="btn-primary text-lg">
-          Schedule a Consultation
-        </a>
-      </motion.div>
+     
     </section>
   );
 };

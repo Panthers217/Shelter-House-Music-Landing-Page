@@ -85,7 +85,7 @@ const FeaturedWork = () => {
       </motion.div>
 
       {/* Category Filter */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -104,7 +104,7 @@ const FeaturedWork = () => {
             {category}
           </button>
         ))}
-      </motion.div>
+      </motion.div> */}
 
       {/* Projects Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -138,7 +138,7 @@ const FeaturedWork = () => {
         ))}
       </div>
 
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, delay: 0.8 }}
@@ -148,7 +148,7 @@ const FeaturedWork = () => {
         <a href="#contact" className="btn-primary text-lg">
           Start Your Project
         </a>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 };
