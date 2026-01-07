@@ -18,7 +18,7 @@ const Header = () => {
     { label: 'Services', href: '#services' },
     { label: 'Process', href: '#process' },
     { label: 'Work', href: '#work' },
-    { label: 'Resources', href: '#resources' },
+    // { label: 'Resources', href: '#resources' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -62,12 +62,12 @@ const Header = () => {
                 {item.label}
               </a>
             ))}
-            <a
+            {/* <a
               href="#donate"
               className="btn-primary"
             >
               Donate
-            </a>
+            </a> */}
           </div>
 
           {/* Mobile Menu Button */}
