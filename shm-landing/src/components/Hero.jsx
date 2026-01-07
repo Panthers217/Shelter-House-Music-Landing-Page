@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import AnimatedMissionContent from './AnimatedMissionContent';
 
 const Hero = () => {
   return (
@@ -49,6 +50,15 @@ const Hero = () => {
             Serving local churches, gospel artists, and the community of Eastern North Carolina 
             with high-quality, professional music production services.
           </motion.p>
+
+          {/* Animated Mission Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <AnimatedMissionContent />
+          </motion.div>
 
          
         </div>
