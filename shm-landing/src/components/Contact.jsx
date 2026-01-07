@@ -35,8 +35,8 @@ const Contact = () => {
         </svg>
       ),
       title: "Phone",
-      content: "(252) 555-0123",
-      link: "tel:+12525550123"
+      content: "(252) 364-,8303"
+      // link: "tel:+12525550123"
     },
     {
       icon: (
@@ -56,19 +56,19 @@ const Contact = () => {
         </svg>
       ),
       title: "Location",
-      content: "Greenville, NC 27858",
+      content: "Jacksonville, NC 28540",
       link: null
     },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      title: "Hours",
-      content: "Mon-Fri: 9AM-6PM",
-      link: null
-    }
+    // {
+    //    icon: (
+    //      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    //        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+    //      </svg>
+    //    ),
+    //   title: "Hours",
+    //   content: "Mon-Fri: 9AM-6PM",
+    //   link: null
+    // }
   ];
 
   return (
@@ -91,14 +91,14 @@ const Contact = () => {
         </p>
       </motion.div>
 
-      <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         {/* Contact Form */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg">
+          {/* <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg">
             <div className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -189,13 +189,13 @@ const Contact = () => {
                 Send Message
               </button>
             </div>
-          </form>
+          </form> */}
         </motion.div>
 
         {/* Contact Information */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="space-y-8"
         >
@@ -237,7 +237,7 @@ const Contact = () => {
           </div>
 
           {/* Social Media */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.9 }}
@@ -263,7 +263,7 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </section>

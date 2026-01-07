@@ -31,9 +31,11 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="heading-1 text-white mb-6"
           >
-            Elevating Worship Through
+            <h1 className="mb-4 text-lg">
+           Praise/Worship & Inspirational -Centered Recording
+            </h1>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent-300 to-accent-100">
-              Professional Music Production
+              Professional Music Production 
             </span>
           </motion.h1>
 
@@ -48,41 +50,7 @@ const Hero = () => {
             with high-quality, professional music production services.
           </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <a href="#services" className="btn-primary text-lg">
-              Explore Our Services
-            </a>
-            <a href="#contact" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-3 px-8 rounded-lg border-2 border-white/30 transition-all duration-300 transform hover:-translate-y-0.5 text-lg">
-              Get Started
-            </a>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="grid grid-cols-3 gap-8 mt-20 pt-12 border-t border-white/20"
-          >
-            <div>
-              <div className="text-4xl font-bold text-white mb-2">100+</div>
-              <div className="text-gray-300">Projects Completed</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-white mb-2">50+</div>
-              <div className="text-gray-300">Artists Served</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-white mb-2">10+</div>
-              <div className="text-gray-300">Years Experience</div>
-            </div>
-          </motion.div>
+         
         </div>
       </div>
 
