@@ -17,7 +17,7 @@ const DonationModel = () => {
         "Prayer support",
         "Community impact reports"
       ],
-      color: "from-blue-500 to-blue-600"
+      color: "from-primary-400 to-primary-500"
     },
     {
       name: "Partner",
@@ -45,12 +45,12 @@ const DonationModel = () => {
         "Legacy naming opportunities",
         "Dedicated support line"
       ],
-      color: "from-accent-600 to-purple-600"
+      color: "from-accent-500 to-accent-600"
     }
   ];
 
   return (
-    <section id="donate" className="section-container bg-gradient-to-br from-gray-900 via-primary-900 to-accent-900 text-white">
+    <section id="donate" className="section-container bg-gradient-to-br from-accent-900 via-primary-900 to-accent-800 text-white">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
@@ -64,7 +64,7 @@ const DonationModel = () => {
         <h2 className="heading-2 mt-4 mb-6">
           Partner With Us in Ministry
         </h2>
-        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+        <p className="text-xl text-primary-100 max-w-3xl mx-auto">
           Your generous support enables us to provide professional music production services to churches 
           and gospel artists who might not otherwise have access to quality recording facilities.
         </p>
@@ -84,7 +84,7 @@ const DonationModel = () => {
         ].map((stat, index) => (
           <div key={index} className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl">
             <div className="text-4xl font-bold text-primary-300 mb-2">{stat.value}</div>
-            <div className="text-gray-300">{stat.label}</div>
+            <div className="text-primary-200">{stat.label}</div>
           </div>
         ))}
       </motion.div>
@@ -99,7 +99,7 @@ const DonationModel = () => {
             transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
             className={`relative rounded-2xl p-8 ${
               tier.featured 
-                ? 'bg-white text-gray-900 shadow-2xl transform scale-105' 
+                ? 'bg-white text-accent-700 shadow-2xl transform scale-105' 
                 : 'bg-white/10 backdrop-blur-sm'
             }`}
           >
@@ -117,14 +117,14 @@ const DonationModel = () => {
               </svg>
             </div>
 
-            <h3 className={`text-2xl font-bold mb-2 ${tier.featured ? 'text-gray-900' : 'text-white'}`}>
+            <h3 className={`text-2xl font-bold mb-2 ${tier.featured ? 'text-accent-700' : 'text-white'}`}>
               {tier.name}
             </h3>
             <div className={`text-4xl font-bold mb-4 ${tier.featured ? 'text-primary-600' : 'text-primary-300'}`}>
               {tier.amount}
-              <span className="text-lg font-normal text-gray-500">/month</span>
+              <span className="text-lg font-normal text-accent-500">/month</span>
             </div>
-            <p className={`mb-6 ${tier.featured ? 'text-gray-600' : 'text-gray-300'}`}>
+            <p className={`mb-6 ${tier.featured ? 'text-accent-600' : 'text-primary-100'}`}>
               {tier.description}
             </p>
 
@@ -140,7 +140,7 @@ const DonationModel = () => {
                   >
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className={tier.featured ? 'text-gray-700' : 'text-gray-300'}>
+                  <span className={tier.featured ? 'text-accent-700' : 'text-primary-100'}>
                     {feature}
                   </span>
                 </li>
@@ -168,11 +168,11 @@ const DonationModel = () => {
         className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center"
       >
         <h3 className="text-2xl font-bold mb-4">Prefer a One-Time Gift?</h3>
-        <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+        <p className="text-primary-100 mb-6 max-w-2xl mx-auto">
           Every contribution, whether one-time or recurring, helps us continue our mission of serving 
           churches and gospel artists with professional music production services.
         </p>
-        <button className="bg-white text-primary-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5">
+        <button className="bg-white text-primary-600 hover:bg-primary-50 font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5">
           Make a One-Time Donation
         </button>
       </motion.div>
@@ -182,7 +182,7 @@ const DonationModel = () => {
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : {}}
         transition={{ duration: 0.6, delay: 1 }}
-        className="text-center text-gray-400 text-sm mt-8"
+        className="text-center text-primary-300 text-sm mt-8"
       >
         Shelter House Music is a 501(c)(3) nonprofit organization. All donations are tax-deductible.
       </motion.p>

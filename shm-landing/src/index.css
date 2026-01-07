@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #f0f9ff;
-  --color-primary-100: #e0f2fe;
-  --color-primary-200: #bae6fd;
-  --color-primary-300: #7dd3fc;
-  --color-primary-400: #38bdf8;
-  --color-primary-500: #0ea5e9;
-  --color-primary-600: #0284c7;
-  --color-primary-700: #0369a1;
-  --color-primary-800: #075985;
-  --color-primary-900: #0c4a6e;
+  --color-primary-50: #FAF1DC;
+  --color-primary-100: #F7DEC2;
+  --color-primary-200: #FAD39D;
+  --color-primary-300: #EDC9AB;
+  --color-primary-400: #E4B790;
+  --color-primary-500: #D08050;
+  --color-primary-600: #C46F43;
+  --color-primary-700: #A85D38;
+  --color-primary-800: #8C4B2E;
+  --color-primary-900: #704025;
   
-  --color-accent-50: #fdf4ff;
-  --color-accent-100: #fae8ff;
-  --color-accent-200: #f5d0fe;
-  --color-accent-300: #f0abfc;
-  --color-accent-400: #e879f9;
-  --color-accent-500: #d946ef;
-  --color-accent-600: #c026d3;
-  --color-accent-700: #a21caf;
-  --color-accent-800: #86198f;
-  --color-accent-900: #701a75;
+  --color-accent-50: #F8F3ED;
+  --color-accent-100: #E9DDCF;
+  --color-accent-200: #D6C2A9;
+  --color-accent-300: #B79671;
+  --color-accent-400: #9F7A58;
+  --color-accent-500: #845632;
+  --color-accent-600: #72492B;
+  --color-accent-700: #5E3C24;
+  --color-accent-800: #4A2F1C;
+  --color-accent-900: #372315;
   
-  --font-family-display: Montserrat, system-ui, sans-serif;
+  --font-family-display: Poppins, system-ui, sans-serif;
   --font-family-sans: Inter, system-ui, sans-serif;
 }
 
@@ -33,7 +33,7 @@
   }
   
   body {
-    @apply bg-white text-gray-900;
+    @apply bg-primary-50 text-accent-900;
   }
 }
 
@@ -43,11 +43,11 @@
   }
   
   .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-primary-600 font-semibold py-3 px-8 rounded-lg border-2 border-primary-600 transition-all duration-300;
+    @apply bg-primary-100 hover:bg-primary-200 text-accent-600 font-semibold py-3 px-8 rounded-lg border-2 border-primary-500 transition-all duration-300;
   }
   
   .heading-1 {

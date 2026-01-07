@@ -54,7 +54,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section-container bg-gradient-to-b from-white to-gray-50">
+    <section className="section-container bg-gradient-to-b from-primary-50 to-primary-100">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
@@ -65,10 +65,10 @@ const Testimonials = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Testimonials
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           What Our Clients Say
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto">
           Hear from the churches, artists, and ministries we've had the privilege to serve.
         </p>
       </motion.div>
@@ -98,7 +98,7 @@ const Testimonials = () => {
               ))}
             </div>
 
-            <p className="text-2xl text-gray-700 leading-relaxed mb-8 text-center italic">
+            <p className="text-2xl text-accent-700 leading-relaxed mb-8 text-center italic">
               "{testimonials[activeIndex].quote}"
             </p>
 
@@ -109,10 +109,10 @@ const Testimonials = () => {
                 className="w-16 h-16 rounded-full object-cover border-4 border-primary-100"
               />
               <div className="text-left">
-                <h4 className="font-bold text-gray-900 text-lg">
+                <h4 className="font-bold text-accent-700 text-lg">
                   {testimonials[activeIndex].name}
                 </h4>
-                <p className="text-gray-600">{testimonials[activeIndex].role}</p>
+                <p className="text-accent-600">{testimonials[activeIndex].role}</p>
               </div>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Testimonials = () => {
         <div className="flex items-center justify-center gap-4 mt-8">
           <button
             onClick={prevTestimonial}
-            className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-primary-600 transition-all duration-300 flex items-center justify-center"
+            className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl text-accent-700 hover:text-primary-600 transition-all duration-300 flex items-center justify-center"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -136,7 +136,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === activeIndex ? 'bg-primary-600 w-8' : 'bg-gray-300'
+                  index === activeIndex ? 'bg-primary-600 w-8' : 'bg-primary-300'
                 }`}
               />
             ))}
@@ -144,7 +144,7 @@ const Testimonials = () => {
 
           <button
             onClick={nextTestimonial}
-            className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl text-gray-700 hover:text-primary-600 transition-all duration-300 flex items-center justify-center"
+            className="w-12 h-12 rounded-full bg-white shadow-lg hover:shadow-xl text-accent-700 hover:text-primary-600 transition-all duration-300 flex items-center justify-center"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

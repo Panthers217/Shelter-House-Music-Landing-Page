@@ -8,33 +8,41 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          200: '#bae6fd',
-          300: '#7dd3fc',
-          400: '#38bdf8',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-          800: '#075985',
-          900: '#0c4a6e',
+          50:  '#FAF1DC', // Cream Cloud (main background)
+          100: '#F7DEC2', // Warm Sand
+          200: '#FAD39D', // Honey Glow
+          300: '#EDC9AB', // Apricot
+          400: '#E4B790', // Peach Clay
+          500: '#D08050', // Sunset Amber (PRIMARY CTA)
+          600: '#C46F43',
+          700: '#A85D38',
+          800: '#8C4B2E',
+          900: '#704025',
         },
         accent: {
-          50: '#fdf4ff',
-          100: '#fae8ff',
-          200: '#f5d0fe',
-          300: '#f0abfc',
-          400: '#e879f9',
-          500: '#d946ef',
-          600: '#c026d3',
-          700: '#a21caf',
-          800: '#86198f',
-          900: '#701a75',
-        }
+          50:  '#F8F3ED',
+          100: '#E9DDCF',
+          200: '#D6C2A9',
+          300: '#B79671', // Hill Taupe
+          400: '#9F7A58',
+          500: '#845632', // Cedar Brown (HEADINGS)
+          600: '#72492B',
+          700: '#5E3C24',
+          800: '#4A2F1C',
+          900: '#372315',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Montserrat', 'system-ui', 'sans-serif'],
+        display: ['Poppins', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        xl: '1rem',
+        '2xl': '1.25rem',
+      },
+      boxShadow: {
+        soft: '0 8px 30px rgba(132, 86, 50, 0.12)',
+        lift: '0 12px 40px rgba(132, 86, 50, 0.18)',
       },
     },
   },

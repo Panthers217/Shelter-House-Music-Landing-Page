@@ -9,12 +9,12 @@ const AnimatedMissionContent = () => {
       title: "Mission Statement",
       content: (
         <div className="space-y-4">
-          <p className="text-base md:text-lg text-gray-100 leading-relaxed">
+          <p className="text-base md:text-lg text-primary-100 leading-relaxed">
             Our mission is to create inspirational, gospel, and Christian music that promotes{' '}
             <span className="font-semibold text-accent-200">healing, peace, righteousness, joy, and spiritual renewal</span>, 
             while uplifting local congregations and artists through collaborative worship-centered recordings.
           </p>
-          <p className="text-base md:text-lg text-gray-100 leading-relaxed">
+          <p className="text-base md:text-lg text-primary-100 leading-relaxed">
             Shelter House exists to use music as a{' '}
             <span className="font-semibold text-accent-200">place of refuge</span>, 
             where faith, creativity, and community come together to glorify God.
@@ -25,7 +25,7 @@ const AnimatedMissionContent = () => {
     {
       title: "Vision Statement",
       content: (
-        <p className="text-base md:text-lg text-gray-100 leading-relaxed">
+        <p className="text-base md:text-lg text-primary-100 leading-relaxed">
           To become a trusted Christian recording ministry that empowers local churches and artists 
           to share their unique worship sound with the world—without financial barriers—while 
           strengthening unity within the Body of Christ.
@@ -47,7 +47,7 @@ const AnimatedMissionContent = () => {
               <span className="flex-shrink-0 w-2 h-2 rounded-full bg-accent-300 mt-2"></span>
               <div>
                 <span className="font-semibold text-accent-200">{value.title}</span>
-                <span className="text-gray-100"> – {value.desc}</span>
+                <span className="text-primary-100"> – {value.desc}</span>
               </div>
             </li>
           ))}

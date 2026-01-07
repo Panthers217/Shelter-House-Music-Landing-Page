@@ -102,10 +102,10 @@ const Resources = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Free Resources
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           Tools & Learning Materials
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto">
           Access our collection of free resources designed to help you prepare for recording and improve your music production knowledge.
         </p>
       </motion.div>
@@ -118,7 +118,7 @@ const Resources = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 group cursor-pointer"
+            className="bg-gradient-to-br from-primary-50 to-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-primary-200 group cursor-pointer"
           >
             <div className="flex items-start gap-4">
               <div className="text-primary-600 bg-primary-50 p-3 rounded-lg group-hover:scale-110 transition-transform duration-300">
@@ -128,10 +128,10 @@ const Resources = () => {
                 <span className="text-xs text-primary-600 font-semibold uppercase tracking-wide">
                   {resource.type}
                 </span>
-                <h3 className="text-lg font-bold text-gray-900 mt-1 mb-2 group-hover:text-primary-600 transition-colors">
+                <h3 className="text-lg font-bold text-accent-700 mt-1 mb-2 group-hover:text-primary-600 transition-colors">
                   {resource.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">
+                <p className="text-accent-600 text-sm mb-4">
                   {resource.description}
                 </p>
                 <button className="text-primary-600 font-semibold text-sm flex items-center group-hover:gap-2 transition-all">
@@ -153,8 +153,8 @@ const Resources = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <div className="text-center mb-12">
-          <h3 className="heading-3 text-gray-900 mb-4">Latest from Our Blog</h3>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h3 className="heading-3 text-accent-700 mb-4">Latest from Our Blog</h3>
+          <p className="text-accent-600 max-w-2xl mx-auto">
             Stay updated with tips, tutorials, and insights from our recording professionals.
           </p>
         </div>
@@ -176,11 +176,11 @@ const Resources = () => {
                 />
               </div>
               <div className="p-6">
-                <time className="text-sm text-gray-500">{post.date}</time>
-                <h4 className="text-xl font-bold text-gray-900 mt-2 mb-3 group-hover:text-primary-600 transition-colors">
+                <time className="text-sm text-accent-500">{post.date}</time>
+                <h4 className="text-xl font-bold text-accent-700 mt-2 mb-3 group-hover:text-primary-600 transition-colors">
                   {post.title}
                 </h4>
-                <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                <p className="text-accent-600 mb-4">{post.excerpt}</p>
                 <button className="text-primary-600 font-semibold flex items-center group-hover:gap-2 transition-all">
                   Read More
                   <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">

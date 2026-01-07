@@ -27,7 +27,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        isScrolled ? 'bg-primary-50 shadow-lg' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,10 +38,12 @@ const Header = () => {
             className="flex items-center"
           >
             <a href="#" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">SH</span>
-              </div>
-              <span className={`font-display font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+              <img 
+                src="/assets/shm-logo.png" 
+                alt="Shelter House Music Logo" 
+                className="w-16 h-16 object-contain"
+              />
+              <span className={`font-display font-bold text-xl ${isScrolled ? 'text-accent-700' : 'text-white'}`}>
                 Shelter House Music
               </span>
             </a>
@@ -53,8 +55,8 @@ const Header = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`font-medium transition-colors duration-300 hover:text-primary-600 ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
+                className={`font-medium transition-colors duration-300 hover:text-primary-500 ${
+                  isScrolled ? 'text-accent-700' : 'text-white'
                 }`}
               >
                 {item.label}
@@ -72,7 +74,7 @@ const Header = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`md:hidden p-2 rounded-lg ${
-              isScrolled ? 'text-gray-900' : 'text-white'
+              isScrolled ? 'text-accent-700' : 'text-white'
             }`}
           >
             <svg
@@ -98,14 +100,14 @@ const Header = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden py-4 bg-white rounded-lg shadow-xl mt-2"
+            className="md:hidden py-4 bg-primary-50 rounded-lg shadow-xl mt-2"
           >
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                className="block px-4 py-3 text-accent-700 hover:bg-primary-100 hover:text-primary-600 transition-colors"
               >
                 {item.label}
               </a>

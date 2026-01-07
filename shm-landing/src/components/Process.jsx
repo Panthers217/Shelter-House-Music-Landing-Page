@@ -61,7 +61,7 @@ const Process = () => {
   ];
 
   return (
-    <section id="process" className="section-container bg-gradient-to-b from-gray-50 to-white">
+    <section id="process" className="section-container bg-gradient-to-b from-primary-50 to-primary-100">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
@@ -72,10 +72,10 @@ const Process = () => {
         <span className="text-primary-600 font-semibold text-sm uppercase tracking-wide">
           Process Timeline
         </span>
-        <h2 className="heading-2 mt-4 mb-6 text-gray-900">
+        <h2 className="heading-2 mt-4 mb-6 text-accent-700">
           Guided Recording Model
         </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p className="text-xl text-accent-600 max-w-3xl mx-auto">
           Shelter House sets the musical direction while honoring the message your ministry wants to communicate.
         </p>
       </motion.div>
@@ -106,8 +106,8 @@ const Process = () => {
                       {step.number}
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{step.description}</p>
+                  <h3 className="text-2xl font-bold text-accent-700 mb-3">{step.title}</h3>
+                  <p className="text-accent-600 leading-relaxed">{step.description}</p>
                 </div>
               </div>
 
