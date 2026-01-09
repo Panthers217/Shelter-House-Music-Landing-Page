@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
+import VideoShowcase from './components/VideoShowcase'
 import Mission from './components/Mission'
 import Services from './components/Services'
 import Process from './components/Process'
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <main>
         <Hero />
+        <VideoShowcase />
         <Mission />
         <Services />
         <Process />
