@@ -35,7 +35,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Phone",
-      content: "(252) 364-,8303"
+      content: "(252) 364-8303"
       // link: "tel:+12525550123"
     },
     {
@@ -84,11 +84,11 @@ const Contact = () => {
           Get In Touch
         </span>
         <h2 className="heading-2 mt-4 mb-6 text-accent-700">
-          Let's Start Your Project
+         Contact Us
         </h2>
-        <p className="text-xl text-accent-600 max-w-3xl mx-auto\">
+        {/* <p className="text-xl text-accent-600 max-w-3xl mx-auto\">
           Have a question or ready to book a session? We'd love to hear from you. Reach out and let's create something amazing together.
-        </p>
+        </p> */}
       </motion.div>
 
       <div className="max-w-4xl mx-auto">
