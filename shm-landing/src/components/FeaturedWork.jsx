@@ -27,30 +27,72 @@ const FeaturedWork = () => {
       category: "Inspirational / Solo Worship",
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
       audio: "/assets/live-in-a-way.mp3"
+    },
+    {
+      id: 4,
+      title: "All My Life",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/all-my-life.mp3"
+    },
+    {
+      id: 5,
+      title: "Faithful Lord",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/faithful-lord.mp3"
+    },
+    {
+      id: 6,
+      title: "God Of The Impossible",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/god-of-the-impossible.mp3"
+    },
+    {
+      id: 7,
+      title: "Jesus Your Love Saves us All",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/jesus-your-love-saves-us-all.mp3"
     }
   ];
 
   const congregationalProjects = [
     {
-      id: 4,
+      id: 8,
       title: "Here Is My Heart",
       category: "Congregational Worship & Choir",
       image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
       audio: "/assets/here-is-my-heart.mp3"
     },
     {
-      id: 5,
+      id: 9,
       title: "Here In Your Presence",
       category: "Congregational Worship & Choir",
       image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800",
       audio: "/assets/here-in-your-presence.mp3"
     },
     {
-      id: 6,
+      id: 10,
       title: "All of My Days",
       category: "Congregational Worship & Choir",
       image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800",
       audio: "/assets/all-of-my-days.mp3"
+    },
+    {
+      id: 11,
+      title: "Let God Arise",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/let-god-arise.mp3"
+    },
+    {
+      id: 12,
+      title: "Jesus Your Love Saves us All",
+      category: "Inspirational / Solo Worship",
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/jesus-your-love-saves-us-all.mp3"
     }
   ];
 
