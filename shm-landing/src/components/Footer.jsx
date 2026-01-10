@@ -30,14 +30,16 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-2xl">SH</span>
-              </div>
+            <a href="#" className="flex items-center space-x-3 mb-6 group cursor-pointer">
+              <img 
+                src="/assets/shm-logo.png" 
+                alt="Shelter House Music Logo" 
+                className="h-16 w-auto object-contain transition-transform group-hover:scale-105"
+              />
               <span className="font-display font-bold text-xl">
                 Shelter House<br />Music
               </span>
-            </div>
+            </a>
             <p className="text-primary-200 mb-6 leading-relaxed">
               Serving the body of Christ through professional music production in Eastern North Carolina.
             </p>
