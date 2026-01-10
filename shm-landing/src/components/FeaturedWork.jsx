@@ -9,90 +9,114 @@ const FeaturedWork = () => {
   const inspirationalProjects = [
     {
       id: 1,
-      title: "Let It Go",
-      category: "Inspirational / Solo Worship",
-      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800",
-      audio: "/assets/let-it-go.mp3"
-    },
-    {
-      id: 2,
-      title: "My Praise",
-      category: "Inspirational / Solo Worship",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800",
-      audio: "/assets/my-praise.mp3"
-    },
-    {
-      id: 3,
-      title: "Live in a Way",
-      category: "Inspirational / Solo Worship",
-      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "/assets/live-in-a-way.mp3"
-    },
-    {
-      id: 4,
-      title: "All My Life",
-      category: "Inspirational / Solo Worship",
+      title: "All of My Life",
+      subGenre: "Retro Contemporary Christian (90s CCM)",
+      description: "A reflective, song-driven gospel track with a classic 1990s CCM feel, focused on personal devotion and heartfelt expression.",
+      styleTags: ["Inspirational", "Classic Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
       audio: "/assets/all-my-life.mp3"
     },
     {
-      id: 5,
+      id: 2,
       title: "Faithful Lord",
-      category: "Inspirational / Solo Worship",
+      subGenre: "Classic Praise & Worship (90s CCM)",
+      description: "A timeless worship song rooted in classic gospel traditions, uplifting and encouraging faith-driven living.",
+      styleTags: ["Congregational", "Inspirational", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
       audio: "/assets/faithful-lord.mp3"
     },
     {
-      id: 6,
-      title: "God Of The Impossible",
-      category: "Inspirational / Solo Worship",
+      id: 3,
+      title: "Let It Go",
+      subGenre: "Retro Inspirational Christian Pop (90s Worship Pop)",
+      description: "A inspirational song with a retro pop-gospel sound that emphasizes surrender, faith, and personal prayer.",
+      styleTags: ["Inspirational", "Gospel", "Retro"],
+      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800",
+      audio: "/assets/let-it-go.mp3"
+    },
+    {
+      id: 4,
+      title: "Live in a Way",
+      subGenre: "Contemporary Christian Pop-Worship (Retro-Inspired)",
+      description: "A Classic gospel-influenced worship track with a retro vibe, focusing on living a life that reflects faith and devotion to God.",
+      styleTags: ["Inspirational", "Classic Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "/assets/god-of-the-impossible.mp3"
+      audio: "/assets/live-in-a-way.mp3"
+    },
+    {
+      id: 5,
+      title: "With All of My Heart",
+      subGenre: "Classic Worship Ballad (90s CCM)",
+      description: "A heartfelt worship ballad with classic gospel influences, emphasizing deep devotion and sincere expression of faith.",
+      styleTags: ["Inspirational", "Classic Gospel", "Retro"],
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/with-all-of-my-heart.mp3"
+    },
+    {
+      id: 6,
+      title: "My Praise",
+      subGenre: "Praise & Worship (Gospel-Influenced CCM)",
+      description: "An uplifting praise and worship song with strong gospel influences, designed to inspire heartfelt worship..",
+      styleTags: ["Praise", "Congregational", "Gospel", "Uplifting"],
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800",
+      audio: "/assets/my-praise.mp3"
     },
     {
       id: 7,
-      title: "Jesus Your Love Saves us All",
-      category: "Inspirational / Solo Worship",
+      title: "God of the Impossible",
+      subGenre: "Worship Rock / Inspirational Rock",
+      description: "A bold, faith-filled worship rock song for solo artists, combining emotional vocals with modern worship-rock dynamics.",
+      styleTags: ["Inspirational", "Solo Worship", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "/assets/jesus-your-love-saves-us-all.mp3"
+      audio: "/assets/god-of-the-impossible.mp3"
     }
   ];
 
   const congregationalProjects = [
-    {
+     {
       id: 8,
       title: "Here Is My Heart",
-      category: "Congregational Worship & Choir",
+      subGenre: "Praise & Worship (Gospel-Inspired Worship Anthem)",
+      description: "A heartfelt yet energetic worship anthem rooted in gospel praise tradition, offering space for call-and-response moments and strong congregational engagement",
+      styleTags: ["Worship", "Congregational", "Choir"],
       image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
       audio: "/assets/here-is-my-heart.mp3"
     },
     {
       id: 9,
       title: "Here In Your Presence",
-      category: "Congregational Worship & Choir",
+      subGenre: "Praise & Worship (Gospel Worship Flow)",
+      description: "A worship-focused praise song that blends reverence with uplifting momentum, suitable for choir-led worship and seamless transitions within a live praise set.",
+      styleTags: ["Congregational", "Choir"],
       image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800",
       audio: "/assets/here-in-your-presence.mp3"
     },
     {
       id: 10,
       title: "All of My Days",
-      category: "Congregational Worship & Choir",
+      subGenre: "Gospel Praise & Worship (Contemporary Praise)",
+      description: "A joyful praise and worship song with strong gospel influence, designed for congregational participation and expressive celebration in a corporate worship setting.",
+      styleTags: ["Congregational", "Choir", "Praise"],
       image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800",
       audio: "/assets/all-of-my-days.mp3"
     },
     {
       id: 11,
-      title: "Let God Arise",
-      category: "Inspirational / Solo Worship",
+      title: "Jesus Love Saves Us All",
+      subGenre: "Contemporary Worship Rock Ballad",
+      description: "A powerful choir-led worship ballad that builds emotional depth through rock-influenced instrumentation and congregational worship energy.",
+      styleTags: ["Congregational", "Choir", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "/assets/let-god-arise.mp3"
+      audio: "/assets/jesus-your-love-saves-us-all.mp3"
     },
     {
       id: 12,
-      title: "Jesus Your Love Saves us All",
-      category: "Inspirational / Solo Worship",
+      title: "Let God Arise",
+      subGenre: "Gospel Praise & Worship (Celebration)",
+      description: "A high-energy praise anthem rooted in gospel worship tradition, featuring strong choir presence and joyful call-and-response moments.",
+      styleTags: ["Praise", "Congregational", "Choir", "Celebration"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "/assets/jesus-your-love-saves-us-all.mp3"
+      audio: "/assets/let-god-arise.mp3"
     }
   ];
 
@@ -149,12 +173,25 @@ const FeaturedWork = () => {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="text-primary-300 text-sm font-semibold mb-2">{project.category}</span>
+                <span className="text-primary-300 text-sm font-semibold mb-2">{project.subGenre}</span>
                 <h4 className="text-2xl font-bold text-white mb-1">{project.title}</h4>
               </div>
               <div className="p-6 bg-white">
-                <span className="text-primary-600 text-sm font-semibold">{project.category}</span>
-                <h4 className="text-xl font-bold text-accent-700 mt-2 mb-4">{project.title}</h4>
+                <span className="text-primary-600 text-sm font-semibold">{project.subGenre}</span>
+                <h4 className="text-xl font-bold text-accent-700 mt-2 mb-2">{project.title}</h4>
+                <p className="text-accent-600 text-sm mb-3 leading-relaxed">{project.description}</p>
+                
+                {/* Style Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.styleTags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-medium rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 
                 {/* Audio Player */}
                 <audio 
@@ -204,12 +241,25 @@ const FeaturedWork = () => {
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="text-primary-300 text-sm font-semibold mb-2">{project.category}</span>
+                <span className="text-primary-300 text-sm font-semibold mb-2">{project.subGenre}</span>
                 <h4 className="text-2xl font-bold text-white mb-1">{project.title}</h4>
               </div>
               <div className="p-6 bg-white">
-                <span className="text-primary-600 text-sm font-semibold">{project.category}</span>
-                <h4 className="text-xl font-bold text-accent-700 mt-2 mb-4">{project.title}</h4>
+                <span className="text-primary-600 text-sm font-semibold">{project.subGenre}</span>
+                <h4 className="text-xl font-bold text-accent-700 mt-2 mb-2">{project.title}</h4>
+                <p className="text-accent-600 text-sm mb-3 leading-relaxed">{project.description}</p>
+                
+                {/* Style Tags */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.styleTags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="px-3 py-1 bg-primary-50 text-primary-700 text-xs font-medium rounded-full"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 
                 {/* Audio Player */}
                 <audio 
@@ -225,18 +275,6 @@ const FeaturedWork = () => {
           ))}
         </div>
       </motion.div>
-
-      {/* <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.8 }}
-        className="text-center mt-16"
-      >
-        <p className="text-accent-600 mb-6">Want to see your project featured here?</p>
-        <a href="#contact" className="btn-primary text-lg">
-          Start Your Project
-        </a>
-      </motion.div> */}
     </section>
   );
 };
