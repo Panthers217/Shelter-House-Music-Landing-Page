@@ -196,6 +196,7 @@ const FeaturedWork = () => {
                 {/* Audio Player */}
                 <audio 
                   controls 
+                  controlsList="nodownload"
                   className="w-full"
                   preload="metadata"
                 >
@@ -264,6 +265,7 @@ const FeaturedWork = () => {
                 {/* Audio Player */}
                 <audio 
                   controls 
+                  controlsList="nodownload"
                   className="w-full"
                   preload="metadata"
                 >
