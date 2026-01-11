@@ -45,8 +45,8 @@ const Contact = () => {
         </svg>
       ),
       title: "Email",
-      content: "info@shelterhousemusic.org",
-      link: "mailto:info@shelterhousemusic.org"
+      content: "info@shelterhousemusic.com",
+      link: "mailto:info@shelterhousemusic.com"
     },
     {
       icon: (

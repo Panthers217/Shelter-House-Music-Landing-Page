@@ -101,14 +101,14 @@ const VideoShowcase = () => {
             <video
               ref={videoRef}
               className="w-full aspect-video object-cover"
-              poster="/assets/shm-fb-cover.png"
+              poster="public/assets/shm-fb-cover.png"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               onTimeUpdate={handleTimeUpdate}
               onLoadedMetadata={handleLoadedMetadata}
             >
-              <source src="/assets/shelter-house-promo.mp4" type="video/mp4" />
-              <source src="/assets/shelter-house-promo.webm" type="video/webm" />
+              <source src="public/assets/shelter-house-promo.mp4" type="video/mp4" />
+              <source src="public/assets/shelter-house-promo.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
 

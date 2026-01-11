@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center space-x-3 mb-6 group cursor-pointer">
               <img 
-                src="/assets/shm-logo.png" 
+                src="public/assets/shm-logo.png" 
                 alt="Shelter House Music Logo" 
                 className="h-16 w-auto object-contain transition-transform group-hover:scale-105"
               />
