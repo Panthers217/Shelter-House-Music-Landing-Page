@@ -14,7 +14,7 @@ const FeaturedWork = () => {
       description: "A reflective, song-driven gospel track with a classic 1990s CCM feel, focused on personal devotion and heartfelt expression.",
       styleTags: ["Inspirational", "Classic Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/all-my-life.mp3"
+      audio: "ministry/assets/all-my-life.mp3"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const FeaturedWork = () => {
       description: "A timeless worship song rooted in classic gospel traditions, uplifting and encouraging faith-driven living.",
       styleTags: ["Congregational", "Inspirational", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/faithful-lord.mp3"
+      audio: "ministry/assets/faithful-lord.mp3"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const FeaturedWork = () => {
       description: "A inspirational song with a retro pop-gospel sound that emphasizes surrender, faith, and personal prayer.",
       styleTags: ["Inspirational", "Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800",
-      audio: "public/assets/let-it-go.mp3"
+      audio: "ministry/assets/let-it-go.mp3"
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const FeaturedWork = () => {
       description: "A Classic gospel-influenced worship track with a retro vibe, focusing on living a life that reflects faith and devotion to God.",
       styleTags: ["Inspirational", "Classic Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/live-in-a-way.mp3"
+      audio: "ministry/assets/live-in-a-way.mp3"
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const FeaturedWork = () => {
       description: "A heartfelt worship ballad with classic gospel influences, emphasizing deep devotion and sincere expression of faith.",
       styleTags: ["Inspirational", "Classic Gospel", "Retro"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/with-all-of-my-heart.mp3"
+      audio: "ministry/assets/with-all-of-my-heart.mp3"
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ const FeaturedWork = () => {
       description: "An uplifting praise and worship song with strong gospel influences, designed to inspire heartfelt worship..",
       styleTags: ["Praise", "Congregational", "Gospel", "Uplifting"],
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800",
-      audio: "public/assets/my-praise.mp3"
+      audio: "ministry/assets/my-praise.mp3"
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ const FeaturedWork = () => {
       description: "A bold, faith-filled worship rock song for solo artists, combining emotional vocals with modern worship-rock dynamics.",
       styleTags: ["Inspirational", "Solo Worship", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/god-of-the-impossible.mp3"
+      audio: "ministry/assets/god-of-the-impossible.mp3"
     },
     {
       id: 11,
@@ -77,7 +77,7 @@ const FeaturedWork = () => {
       description: "A powerful choir-led worship ballad that builds emotional depth through rock-influenced instrumentation and congregational worship energy.",
       styleTags: ["Congregational", "Choir", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/jesus-your-love-saves-us-all.mp3"
+      audio: "ministry/assets/jesus-your-love-saves-us-all.mp3"
     }
   ];
 
@@ -89,7 +89,7 @@ const FeaturedWork = () => {
       description: "A heartfelt yet energetic worship anthem rooted in gospel praise tradition, offering space for call-and-response moments and strong congregational engagement",
       styleTags: ["Worship", "Congregational", "Choir"],
       image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800",
-      audio: "public/assets/here-is-my-heart.mp3"
+      audio: "ministrypublic/assets/here-is-my-heart.mp3"
     },
     {
       id: 9,
@@ -98,7 +98,7 @@ const FeaturedWork = () => {
       description: "A worship-focused praise song that blends reverence with uplifting momentum, suitable for choir-led worship and seamless transitions within a live praise set.",
       styleTags: ["Congregational", "Choir"],
       image: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?w=800",
-      audio: "public/assets/here-in-your-presence.mp3"
+      audio: "ministry/assets/here-in-your-presence.mp3"
     },
     {
       id: 10,
@@ -107,7 +107,7 @@ const FeaturedWork = () => {
       description: "A joyful praise and worship song with strong gospel influence, designed for congregational participation and expressive celebration in a corporate worship setting.",
       styleTags: ["Congregational", "Choir", "Praise"],
       image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800",
-      audio: "public/assets/all-of-my-days.mp3"
+      audio: "ministry/assets/all-of-my-days.mp3"
     },
     {
       id: 11,
@@ -116,7 +116,7 @@ const FeaturedWork = () => {
       description: "A powerful choir-led worship ballad that builds emotional depth through rock-influenced instrumentation and congregational worship energy.",
       styleTags: ["Congregational", "Choir", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/jesus-your-love-saves-us-all.mp3"
+      audio: "ministry/assets/jesus-your-love-saves-us-all.mp3"
     },
     {
       id: 12,
@@ -125,7 +125,7 @@ const FeaturedWork = () => {
       description: "A high-energy praise anthem rooted in gospel worship tradition, featuring strong choir presence and joyful call-and-response moments.",
       styleTags: ["Praise", "Congregational", "Choir", "Celebration"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
-      audio: "public/assets/let-god-arise.mp3"
+      audio: "ministry/assets/let-god-arise.mp3"
     }
   ];
 
