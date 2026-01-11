@@ -9,6 +9,8 @@ const VideoShowcase = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -38,6 +40,33 @@ const VideoShowcase = () => {
         videoRef.current.msRequestFullscreen();
       }
     }
+  };
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current) {
+      setCurrentTime(videoRef.current.currentTime);
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      setDuration(videoRef.current.duration);
+    }
+  };
+
+  const handleSeek = (e) => {
+    const newTime = parseFloat(e.target.value);
+    if (videoRef.current) {
+      videoRef.current.currentTime = newTime;
+      setCurrentTime(newTime);
+    }
+  };
+
+  const formatTime = (time) => {
+    if (isNaN(time)) return '0:00';
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60);
+    return `${minutes}:${seconds.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -72,9 +101,11 @@ const VideoShowcase = () => {
             <video
               ref={videoRef}
               className="w-full aspect-video object-cover"
-              poster="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&q=80"
+              poster="/assets/shm-fb-cover.png"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
+              onTimeUpdate={handleTimeUpdate}
+              onLoadedMetadata={handleLoadedMetadata}
             >
               <source src="/assets/shelter-house-promo.mp4" type="video/mp4" />
               <source src="/assets/shelter-house-promo.webm" type="video/webm" />
@@ -100,37 +131,67 @@ const VideoShowcase = () => {
               )}
 
               {/* Bottom Controls */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 flex items-center gap-4">
-                <button
-                  onClick={togglePlay}
-                  className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
-                >
-                  {isPlaying ? (
-                    <Pause className="w-5 h-5 text-accent-700" fill="currentColor" />
-                  ) : (
-                    <Play className="w-5 h-5 text-accent-700 ml-0.5" fill="currentColor" />
-                  )}
-                </button>
+              <div className="absolute bottom-0 left-0 right-0 p-6 space-y-3">
+                {/* Timeline Slider */}
+                <div className="flex items-center gap-3">
+                  <span className="text-white text-sm font-medium min-w-[45px]">
+                    {formatTime(currentTime)}
+                  </span>
+                  <input
+                    type="range"
+                    min="0"
+                    max={duration || 0}
+                    value={currentTime}
+                    onChange={handleSeek}
+                    className="flex-1 h-2 bg-white/30 rounded-full appearance-none cursor-pointer
+                      [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:w-4 [&::-webkit-slider-thumb]:h-4 
+                      [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-primary-500 
+                      [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:shadow-lg
+                      [&::-moz-range-thumb]:w-4 [&::-moz-range-thumb]:h-4 [&::-moz-range-thumb]:rounded-full 
+                      [&::-moz-range-thumb]:bg-primary-500 [&::-moz-range-thumb]:cursor-pointer 
+                      [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:shadow-lg"
+                    style={{
+                      background: `linear-gradient(to right, #8B5CF6 0%, #8B5CF6 ${(currentTime / duration) * 100}%, rgba(255,255,255,0.3) ${(currentTime / duration) * 100}%, rgba(255,255,255,0.3) 100%)`
+                    }}
+                  />
+                  <span className="text-white text-sm font-medium min-w-[45px]">
+                    {formatTime(duration)}
+                  </span>
+                </div>
 
-                <button
-                  onClick={toggleMute}
-                  className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
-                >
-                  {isMuted ? (
-                    <VolumeX className="w-5 h-5 text-accent-700" />
-                  ) : (
-                    <Volume2 className="w-5 h-5 text-accent-700" />
-                  )}
-                </button>
+                {/* Control Buttons */}
+                <div className="flex items-center gap-4">
+                  <button
+                    onClick={togglePlay}
+                    className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+                  >
+                    {isPlaying ? (
+                      <Pause className="w-5 h-5 text-accent-700" fill="currentColor" />
+                    ) : (
+                      <Play className="w-5 h-5 text-accent-700 ml-0.5" fill="currentColor" />
+                    )}
+                  </button>
 
-                <div className="flex-1"></div>
+                  <button
+                    onClick={toggleMute}
+                    className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+                  >
+                    {isMuted ? (
+                      <VolumeX className="w-5 h-5 text-accent-700" />
+                    ) : (
+                      <Volume2 className="w-5 h-5 text-accent-700" />
+                    )}
+                  </button>
 
-                <button
-                  onClick={toggleFullscreen}
-                  className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
-                >
-                  <Maximize className="w-5 h-5 text-accent-700" />
-                </button>
+                  <div className="flex-1"></div>
+
+                  <button
+                    onClick={toggleFullscreen}
+                    className="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-colors shadow-lg"
+                  >
+                    <Maximize className="w-5 h-5 text-accent-700" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

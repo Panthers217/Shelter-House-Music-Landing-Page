@@ -69,6 +69,15 @@ const FeaturedWork = () => {
       styleTags: ["Inspirational", "Solo Worship", "Worship Rock"],
       image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
       audio: "/assets/god-of-the-impossible.mp3"
+    },
+    {
+      id: 11,
+      title: "Jesus Love Saves Us All",
+      subGenre: "Contemporary Worship Rock Ballad",
+      description: "A powerful choir-led worship ballad that builds emotional depth through rock-influenced instrumentation and congregational worship energy.",
+      styleTags: ["Congregational", "Choir", "Worship Rock"],
+      image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800",
+      audio: "/assets/jesus-your-love-saves-us-all.mp3"
     }
   ];
 
