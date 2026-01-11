@@ -107,8 +107,8 @@ const VideoShowcase = () => {
               onTimeUpdate={handleTimeUpdate}
               onLoadedMetadata={handleLoadedMetadata}
             >
-              <source src="ministry/assets/shelter-house-promo.mp4" type="video/mp4" />
-              <source src="ministry/assets/shelter-house-promo.webm" type="video/webm" />
+              <source src="https://shelterhousemusic.com/ministry/assets/shelter-house-promo.mp4" />
+              <source src="https://shelterhousemusic.com/ministry/assets/shelter-house-promo.webm" type="video/webm" />
               Your browser does not support the video tag.
             </video>
 
