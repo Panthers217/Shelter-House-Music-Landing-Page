@@ -1,0 +1,9 @@
+{
+  "name": "shelter-house-music",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:ministry": "cd ministry-site && npm install && npm run build",
+    "build": "npm run build:ministry && rm -rf publish && mkdir -p publish && cp -r root-site/* publish/ && cp -r ministry-site/dist publish/ministry"
+  }
+}
