@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src="ministry/assets/hero-background.jpg" 
+          src="https://shelterhousemusic.com/ministry/assets/hero-background.jpg" 
           alt="Shelter House Music" 
           className="w-full h-full object-cover"
         />

@@ -101,7 +101,7 @@ const VideoShowcase = () => {
             <video
               ref={videoRef}
               className="w-full aspect-video object-cover"
-              poster="ministry/assets/shm-fb-cover.png"
+              poster="https://shelterhousemusic.com/ministryy/assets/shm-fb-cover.png"
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               onTimeUpdate={handleTimeUpdate}

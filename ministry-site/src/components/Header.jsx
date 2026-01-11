@@ -39,7 +39,7 @@ const Header = () => {
           >
             <a href="#" className="flex items-center space-x-2">
               <img 
-                src="ministry/assets/shm-logo.png" 
+                src="https://shelterhousemusic.com/ministry/assets/shm-logo.png" 
                 alt="Shelter House Music Logo" 
                 className="w-16 h-16 object-contain"
               />
